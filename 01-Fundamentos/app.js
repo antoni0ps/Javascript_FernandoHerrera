@@ -17,7 +17,7 @@ console.log({a});
 console.log({b});
 console.log({c});
 
-
+//prueba de commitasdfasdfasdfasdf
 //Podemos imprimir normal, con warning o error
 // console.log(c)
 // console.warn({c})
