@@ -5,11 +5,15 @@
 //let const = 123;
 let constante = 123;
 
-let await = 20;
-let number = 20;
+//El nombre de las variables debe ser lo más claro y significativo posible para no confundilas
 
-function sum (){
-    return number + constante;
-} 
+//usar lowerCamelCase
 
-console.log(sum);
+let holaQueTal = 'Hola que tal';
+
+// no se pueden crear nombres de variables que comiencen por numeros
+
+//Se puede utilizar guion bajo para separar numeros y $ para crear variables
+
+let ruta_66 = 66;
+let adio$ = 'adios';
