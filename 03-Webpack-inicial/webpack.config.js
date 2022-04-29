@@ -10,20 +10,23 @@ module.exports = {
 
 
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.html$/,
                 loader: 'html-loader',
                 options: {
                     sources: false,
                 }
-            }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
         ]
     },
 
 
     optimization: {
-        
+
     },
 
     plugins: [
