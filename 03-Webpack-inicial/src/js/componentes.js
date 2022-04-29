@@ -1,4 +1,5 @@
 import '../css/componentes.css'
+// import webpackLogo from '../assets/img/webpack-logo.png'
 
 //Debemos agregar la palabra reservada export a todo lo que queramos exportar a otro archivo js.
 export const saludar = (nombre) => {
@@ -8,4 +9,9 @@ export const saludar = (nombre) => {
     h1.innerText = `Hola, ${nombre}`;
 
     document.body.append(h1);
+
+
+    const imagen = document.createElement('img');
+    imagen.src = webpackLogo;
+    document.body.append(imagen);
 }

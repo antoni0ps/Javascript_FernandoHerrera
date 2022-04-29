@@ -40,6 +40,16 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
+/***/ "./src/styles.css":
+/*!************************!*\
+  !*** ./src/styles.css ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack-inicial/./src/styles.css?");
+
+/***/ }),
+
 /***/ "./src/css/componentes.css":
 /*!*********************************!*\
   !*** ./src/css/componentes.css ***!
@@ -116,7 +126,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_componentes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/componentes.js */ \"./src/js/componentes.js\");\n\r\n\r\n\r\nconst nombre = ('Antonio');\r\n(0,_js_componentes_js__WEBPACK_IMPORTED_MODULE_0__.saludar)(nombre);\n\n//# sourceURL=webpack://webpack-inicial/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_componentes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/componentes.js */ \"./src/js/componentes.js\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\r\n\r\n\r\n\r\nconst nombre = ('Antonio');\r\n(0,_js_componentes_js__WEBPACK_IMPORTED_MODULE_0__.saludar)(nombre);\n\n//# sourceURL=webpack://webpack-inicial/./src/index.js?");
 
 /***/ }),
 
@@ -126,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"saludar\": () => (/* binding */ saludar)\n/* harmony export */ });\n/* harmony import */ var _css_componentes_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/componentes.css */ \"./src/css/componentes.css\");\n\r\n\r\n//Debemos agregar la palabra reservada export a todo lo que queramos exportar a otro archivo js.\r\nconst saludar = (nombre) => {\r\n    console.log('Creando etiqueta h1');\r\n\r\n    const h1 = document.createElement('h1');\r\n    h1.innerText = `Hola, ${nombre}`;\r\n\r\n    document.body.append(h1);\r\n}\n\n//# sourceURL=webpack://webpack-inicial/./src/js/componentes.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"saludar\": () => (/* binding */ saludar)\n/* harmony export */ });\n/* harmony import */ var _css_componentes_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/componentes.css */ \"./src/css/componentes.css\");\n\r\n// import webpackLogo from '../assets/img/webpack-logo.png'\r\n\r\n//Debemos agregar la palabra reservada export a todo lo que queramos exportar a otro archivo js.\r\nconst saludar = (nombre) => {\r\n    console.log('Creando etiqueta h1');\r\n\r\n    const h1 = document.createElement('h1');\r\n    h1.innerText = `Hola, ${nombre}`;\r\n\r\n    document.body.append(h1);\r\n\r\n\r\n    const imagen = document.createElement('img');\r\n    imagen.src = webpackLogo;\r\n    document.body.append(imagen);\r\n}\n\n//# sourceURL=webpack://webpack-inicial/./src/js/componentes.js?");
 
 /***/ })
 
