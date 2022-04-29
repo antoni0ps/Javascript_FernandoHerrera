@@ -47,7 +47,7 @@ module.exports = {
         }),
 
         new MiniCssExtractPlugin({
-            filename: 'styles.[fullhash].css', //el fullhash es recomendado para el entorno de producción
+            filename: 'styles.css', //el fullhash es recomendado para el entorno de producción
             ignoreOrder: false
         }),
 
