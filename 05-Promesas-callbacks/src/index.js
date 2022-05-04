@@ -17,5 +17,26 @@ const heroeId2 = 'iron';
 //     }
 // });
 
+/**
+ * Nuestra funcion buscarHeroe recibe el id de un heroe como argumento, despues el metodo then especifica
+ * que debe hacer dicha función. En este caso llama a otra función que recibe un heroe por parámetro
+ * y manda a imprimir un mensaje.
+ */
+// buscarHeroe(heroeId1).then(heroe1 => {
+//     buscarHeroe(heroeId2).then(heroe2 => {
+//         console.log(`Enviando a ${heroe1.nombre} y ${heroe2.nombre} a la misión`);
+//     });
+// });
 
-buscarHeroe(heroeId1)
+
+//Promise.all para ejecutar varias promesas simultáneamente, especificamos lo que queremos hacer cuando se resuelvan todas.
+//Enviamos como argumento un array de promesas
+Promise.all([buscarHeroe(heroeId1), buscarHeroe(heroeId2)]).then(heroes => {
+    console.log(`Enviando a ${heroes[0].nombre} y ${heroes[1].nombre} a la misión`);
+})
+
+//Mismo que arriba pero usando desestructuración de arrays en el argumento de la función dentro del then
+Promise.all([buscarHeroe(heroeId1), buscarHeroe(heroeId2)])
+    .then(([heroe1, heroe2]) => {
+        console.log(`Enviando a ${heroe1.nombre} y ${heroe2.nombre} a la misión`);
+    })
