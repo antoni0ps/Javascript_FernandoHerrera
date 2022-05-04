@@ -1,16 +1,4 @@
-# Webpack Starter
+# TODO App
 
-Esta es la estructura con la configuración inicial para crear aplicaciones utilizando webpack.
+Lista de tareas creada en javascript
 
-
-### Notas:
-
-Recordar reconstruir los módulos de node
-```
-npm install
-```
-
-Y para construir el build, recordar:
-```
-npm run build
-```
